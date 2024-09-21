@@ -22,7 +22,6 @@ class NotesItem extends StatelessWidget {
                 fontSize: 28,
               ),
             ),
-            
             subtitle: Padding(
               padding: const EdgeInsets.only(top: 18.0, bottom: 18),
               child: Text(

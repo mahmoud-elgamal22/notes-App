@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         NotesView.id: (context) => const NotesView(),
       },
+      initialRoute: NotesView.id,
     );
   }
 }

@@ -12,15 +12,15 @@ class AddNoteBottomSheet extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16.0),
       height: 500,
-      color: const Color.fromARGB(255, 76, 97, 108),
+      color: const Color.fromARGB(255, 39, 37, 37),
       child: const SingleChildScrollView(
         child: Column(
           children: [
-            CustomTextField(
+            CustomTextFormField(
               hint: 'Title',
             ),
             SizedBox(height: 24),
-            CustomTextField(
+            CustomTextFormField(
               hint: 'Description',
               maxlines: 6,
             ),

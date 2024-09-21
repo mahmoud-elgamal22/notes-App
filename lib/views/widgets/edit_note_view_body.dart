@@ -15,15 +15,16 @@ class EditNoteViewBody extends StatelessWidget {
             SizedBox(height: 55),
             CustomAppBar(
               title: 'Save Note',
-              icon: Icons.home,
+              icon: Icons.check,
             ),
-            CustomTextField(
+            SizedBox(height: 50),
+            CustomTextFormField(
               hint: 'Title',
             ),
-            SizedBox(height: 16),
-            CustomTextField(
+            SizedBox(height: 24),
+            CustomTextFormField(
               hint: 'Description',
-              maxlines: 10,
+              maxlines: 7,
             ),
           ],
         ),

@@ -19,7 +19,7 @@ class CustomTextFormField extends StatelessWidget {
         onSaved: onSaved,
         validator: (value) {
           if (value?.isEmpty ?? true) {
-            return 'Field cannot be empty';
+            return 'Field must not be empty';
           }
           return null;
         },
@@ -27,11 +27,11 @@ class CustomTextFormField extends StatelessWidget {
         cursorColor: kPrimaryColor,
         decoration: InputDecoration(
           hintText: (hint),
-          hintStyle: const TextStyle(color: Colors.cyanAccent),
+          hintStyle: const TextStyle(color: kPrimaryColor),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
             borderSide: const BorderSide(
-              color: Colors.cyanAccent,
+              color: kPrimaryColor,
             ),
           ),
         ),
